@@ -18,7 +18,7 @@ TODO: Update this [In Progress]
 4. Run `npm run lint` , `npm run format` to clean the code
 5. Run `npm run test`, make sure existing and new tests should pass or else the pull request will be rejected.
 6. Commit the changes to your branch.
-7. Create a pull request for `main` branch, and tag reviewers.
+7. Create a pull request for `develop` branch, and tag reviewers.
 
 
 TODOs:
