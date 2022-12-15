@@ -15,5 +15,4 @@ describe('Check NonEmptyString And Optional NonEmptyString Assertion Type', () =
   test('OptionalNonEmptyString: Optional NonEmptyString Valid Assertion', () => {
     expect(ccax.assertOptionalNonEmptyString('Code', 'name')).toBeTruthy();
   });
-
 });

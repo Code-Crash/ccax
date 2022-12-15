@@ -29,5 +29,4 @@ describe('Check Object And Optional Object Assertion Type', () => {
   test('OptionalNotNullObject: Optional NotNullObject Valid Assertion', () => {
     expect(ccax.assertOptionalNotNullObject(null, 'value')).toBeTruthy();
   });
-
 });

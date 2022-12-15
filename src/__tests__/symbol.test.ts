@@ -15,5 +15,4 @@ describe('Check Symbol And Optional Symbol Assertion Type', () => {
   test('OptionalSymbol: Optional Symbol Valid Assertion', () => {
     expect(ccax.assertOptionalSymbol(Symbol('code'), 'value')).toBeTruthy();
   });
-
 });

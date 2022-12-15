@@ -1,9 +1,9 @@
 import { ParamError } from '../components/classes';
 import { PARAM_ERROR } from './constants';
-import OptionalAssertor from './optional-assertor';
+import InstanceAssertor from './instance-assertor';
 import Validator from './type-validator';
 
-export default class Assertor extends OptionalAssertor {
+export default class Assertor extends InstanceAssertor {
   /**
    * This method assert string by returning true or ParamError exception
    * @param {any} value
