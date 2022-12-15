@@ -15,5 +15,4 @@ describe('Check Null And Optional Null Assertion Type', () => {
   test('OptionalNull: Optional Null Valid Assertion', () => {
     expect(ccax.assertOptionalNull(null, 'name')).toBeTruthy();
   });
-
 });

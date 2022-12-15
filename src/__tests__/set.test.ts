@@ -21,5 +21,4 @@ describe('Check Set And Optional Set Assertion Type', () => {
     set.add('string');
     expect(ccax.assertOptionalSet(set, 'value')).toBeTruthy();
   });
-
 });

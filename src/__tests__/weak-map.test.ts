@@ -21,5 +21,4 @@ describe('Check WeakMap And Optional WeakMap Assertion Type', () => {
     map.set({ B: 2 }, 2);
     expect(ccax.assertOptionalWeakMap(map, 'value')).toBeTruthy();
   });
-
 });

@@ -3,7 +3,6 @@
  * @file config.ts - Purpose of this file will be to hold the configuration or customization.
  */
 
-
 /**
  * This interface will be used as ConfigOptions for Config class
  * @interface ConfigOptions

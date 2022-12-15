@@ -15,5 +15,4 @@ describe('Check Number And Optional Number Assertion Type', () => {
   test('OptionalNumber: Optional Number Valid Assertion', () => {
     expect(ccax.assertOptionalNumber(20, 'value')).toBeTruthy();
   });
-
 });

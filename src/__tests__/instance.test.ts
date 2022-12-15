@@ -4,12 +4,9 @@ import ccax from '../index';
 class Person {
   name: string = '';
 }
-class Employee extends Person {
-}
-class User extends Person {
-}
-class Manager extends Employee {
-}
+class Employee extends Person {}
+class User extends Person {}
+class Manager extends Employee {}
 
 // let person = new Person();
 // let employee = new Employee();
@@ -47,7 +44,6 @@ class Manager extends Employee {
 // manager == Manager
 
 describe('Check Instance Of Class And Optional Instance Of Class Assertion Type', () => {
-
   /**
    * Instance Assertion Tests With ParamError Type
    */
@@ -65,5 +61,4 @@ describe('Check Instance Of Class And Optional Instance Of Class Assertion Type'
       ccax.assertInstanceOf(undefined, 'source', Object, 'target');
     }).toThrow('Param source must be instance of target');
   });
-
 });

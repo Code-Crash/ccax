@@ -15,5 +15,4 @@ describe('Check Undefined And Optional Undefined Assertion Type', () => {
   test('OptionalUndefined: Optional Undefined Valid Assertion', () => {
     expect(ccax.assertOptionalUndefined(undefined, 'value')).toBeTruthy();
   });
-
 });

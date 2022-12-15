@@ -5,10 +5,9 @@ import InstanceValidator from './instance-validator';
 import OptionalAssertor from './optional-assertor';
 
 export default class InstanceAssertor extends OptionalAssertor {
-
   /**
    * This method assert instance by returning true or ParamError exception
-   * @param {any} value 
+   * @param {any} value
    * @param {string} valueName
    * @param {any} instance
    * @param {string} instanceName
