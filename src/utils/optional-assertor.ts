@@ -13,7 +13,6 @@ export default class OptionalAssertor {
   static assertOptionalString = (value: any, name: string): boolean => {
     if (!OptionalValidator.isOptionalString(value)) {
       // TODO: Check if formatting works, remove this commented code.
-      // throw new ParamError(`Param ${name} must be a string`);
       throw new ParamError(PARAM_ERROR.optionalInvalid.format(name, 'String'));
     }
     return true;

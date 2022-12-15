@@ -1,5 +1,5 @@
 /**
- * This class will contains the static methods which will help to validate the types
+ * This class will contains the static methods which will help to validate the types (primitive types)
  * @class Validator
  */
 export default class Validator {

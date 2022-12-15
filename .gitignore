@@ -286,3 +286,4 @@ log/
 # Log file
 logs
 *.log%
+example*
