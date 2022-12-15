@@ -2,6 +2,12 @@
  * This file contains the utility type, interfaces and methods which will help in the library
  */
 
+declare global {
+  interface String {
+    format(...replacements: string[]): string;
+  }
+}
+
 if (!String.prototype.format) {
   String.prototype.format = function () {
     const args = arguments;

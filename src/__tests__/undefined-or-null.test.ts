@@ -1,4 +1,4 @@
-import { ParamError } from '../components/classes';
+import ParamError from '../classes/param-error';
 import ccax from '../index';
 
 describe('Check UndefinedOrNull And Optional UndefinedOrNull Assertion Type', () => {
