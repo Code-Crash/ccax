@@ -1,4 +1,4 @@
-import { ParamError } from '../components/classes';
+import ParamError from '../classes/param-error';
 import { PARAM_ERROR } from './constants';
 import InstanceAssertor from './instance-assertor';
 import Validator from './type-validator';

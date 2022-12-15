@@ -1,4 +1,4 @@
-import { ParamError } from '../components/classes';
+import InstanceError from '../classes/instance-error';
 import ccax from '../index';
 
 class Person {
@@ -45,12 +45,12 @@ class Manager extends Employee {}
 
 describe('Check Instance Of Class And Optional Instance Of Class Assertion Type', () => {
   /**
-   * Instance Assertion Tests With ParamError Type
+   * Instance Assertion Tests With InstanceError Type
    */
-  test('Instance (ParamError): undefined is not an instance of Object Assertion', () => {
+  test('Instance (InstanceError): undefined is not an instance of Object Assertion', () => {
     expect(() => {
       ccax.assertInstanceOf(undefined, 'source', Object, 'target');
-    }).toThrow(ParamError);
+    }).toThrow(InstanceError);
   });
 
   /**

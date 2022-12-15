@@ -1,4 +1,4 @@
-import { ParamError } from '../components/classes';
+import InstanceError from '../classes/instance-error';
 import Assertor from './assertor';
 import { PARAM_ERROR } from './constants';
 import InstanceValidator from './instance-validator';
@@ -6,7 +6,7 @@ import OptionalAssertor from './optional-assertor';
 
 export default class InstanceAssertor extends OptionalAssertor {
   /**
-   * This method assert instance by returning true or ParamError exception
+   * This method assert instance by returning true or InstanceError exception
    * @param {any} value
    * @param {string} valueName
    * @param {any} instance
@@ -18,7 +18,7 @@ export default class InstanceAssertor extends OptionalAssertor {
     Assertor.assertNonEmptyString(valueName, 'valueName');
     Assertor.assertNonEmptyString(instanceName, 'instanceName');
     if (!InstanceValidator.isInstanceOf(value, instance)) {
-      throw new ParamError(PARAM_ERROR.instanceInvalid.format(valueName, instanceName));
+      throw new InstanceError(PARAM_ERROR.instanceInvalid.format(valueName, instanceName));
     }
     return true;
   };
