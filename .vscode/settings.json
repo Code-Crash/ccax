@@ -1,10 +1,206 @@
 {
+  "editor.rulers": [
+    {
+      "color": "#80d56f", // Try to wrap code within the green ruler :D
+      "column": 80
+    },
+    {
+      "color": "#4592f7", // Long length code can be extend to blue ruler ;)
+      "column": 100
+    },
+    {
+      "color": "#e9685e", //  code|comment : Do not cross the border, which is red line. :P
+      "column": 120
+    }
+  ],
+  "editor.tabCompletion": "on",
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": false,
+  "editor.trimAutoWhitespace": true,
+  "editor.formatOnSave": true,
+  "sonarlint.connectedMode.project": {
+    "connectionId": "project_x_sonar",
+    "projectKey": "project_x_services"
+  },
+  "sonarlint.disableTelemetry": true,
+  "files.exclude": {
+    "**/.DS_Store": true,
+    "**/.git": true,
+    "**/.hg": true,
+    "**/.svn": true,
+    "**/CVS": true,
+    "dist": true
+  },
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "typescript.tsdk": "./node_modules/typescript/lib",
+  "todo-tree.highlights.customHighlight": {
+    "BUG": {
+      "icon": "bug",
+      "type": "text", // "line"
+      "foreground": "#FFA500",
+      // "background": "transparent",
+      "opacity": 70,
+      "iconColour": "#FFA500"
+    },
+    "TODO": {
+      "icon": "check",
+      "type": "text",
+      "foreground": "green",
+      // "background": "transparent",
+      "opacity": 70,
+      "iconColour": "green"
+    },
+    "FIXME": {
+      "icon": "flame",
+      "type": "text",
+      "foreground": "red",
+      // "background": "transparent",
+      "opacity": 70,
+      "iconColour": "red"
+    },
+    "TBD": {
+      "icon": "question",
+      "type": "text",
+      "foreground": "cyan",
+      // "background": "transparent",
+      "opacity": 70,
+      "iconColour": "cyan"
+    },
+    "HACK": {
+      "icon": "squirrel",
+      "type": "text",
+      "foreground": "yellow",
+      // "background": "transparent",
+      "opacity": 70,
+      "iconColour": "yellow"
+    },
+    "NOTE": {
+      "icon": "note",
+      "type": "text",
+      "foreground": "#A8FF33",
+      // "background": "transparent",
+      "opacity": 70,
+      "iconColour": "#A8FF33"
+    }
+  },
+  "todo-tree.tree.showScanModeButton": false,
+  "todo-tree.filtering.excludeGlobs": [
+    "**/node_modules/*/**"
+  ],
+  "todo-tree.regex.regex": "($TAGS):",
+  "todo-tree.general.tags": [
+    "BUG",
+    "HACK",
+    "FIXME",
+    "TODO",
+    "XXX",
+    "TBD",
+    "NOTE"
+  ],
+  "todo-tree.general.tagGroups": {
+    "FIXME": [
+      "FIXME",
+      "FIXIT",
+      "FIX"
+    ]
+  },
+  "fileHeaderComment.parameter": {
+    "*": {
+      "commentbegin": "/**",
+      "commentprefix": " *",
+      "commentend": " */",
+      "company": "project-x",
+      "author": "code-crash"
+    }
+  },
+  "fileHeaderComment.template": {
+    "*": [
+      "${commentbegin}",
+      "${commentprefix} Note: It's a default template, please select proper or to design one as per use case ask @ProjectX",
+      "${commentend}"
+    ],
+    "copyright": [
+      "${commentbegin}",
+      "${commentprefix} @module <MODULE_NAME>",
+      "${commentprefix} @description <MODULE_DESCRIPTION>",
+      "${commentprefix} @file ${filename} - Created on ${date}",
+      "${commentprefix}",
+      "${commentprefix} @copyright (c) @ ${year} ${company}",
+      "${commentend}"
+    ],
+    "function": [
+      "${commentbegin}",
+      "${commentprefix} @function <FUNCTION_NAME>",
+      "${commentprefix} @author ${author}",
+      "${commentprefix} @description <FUNCTION_DESCRIPTION>",
+      "${commentprefix} @param {<PARAM_TYPE>} <PARAM_NAME> <PARAM_DESCRIPTION> // NOTE: If no params to function, remove this line",
+      "${commentprefix} @returns {<RETURN_TYPE>} <RETURN_DESCRIPTION> // NOTE: If no returns from function, remove this line",
+      "${commentend}"
+    ],
+    "class": [
+      "${commentbegin}",
+      "${commentprefix} @class <CLASS_NAME>",
+      "${commentprefix} @author ${author}",
+      "${commentprefix} @extends <CLASS_NAME>",
+      "${commentprefix} @implements {<INTERFACE_NAME>}",
+      "${commentprefix} @description <CLASS_DESCRIPTION>",
+      "${commentprefix} @param {<PARAM_TYPE>} <PARAM_NAME> <PARAM_DESCRIPTION> // NOTE: If no params for class, remove this line",
+      "${commentprefix} @returns {<RETURN_TYPE>} <RETURN_DESCRIPTION> // NOTE: If no returns from class, remove this line",
+      "${commentend}"
+    ],
+    "library_import": [
+      "${commentbegin} LIBRARY IMPORT START ${commentend}"
+    ],
+    "custom_import": [
+      "${commentbegin} CUSTOM IMPORT START ${commentend}"
+    ],
+    "belongsToAccessor": [
+      "${commentbegin} BelongsTo Relations Accessor Declarations ${commentend}"
+    ],
+    "belongsToAccessorRegister": [
+      "${commentbegin} Register <MODEL_NAME> Repository on BelongsToAccessor ${commentend}"
+    ]
+  },
   "cSpell.words": [
     "postversion",
     "preversion",
     "ccax"
   ],
-  "editor.tabSize": 2,
-  "editor.insertSpaces": true,
-  "editor.detectIndentation": false
+  "dineug.vuerd-vscode.themeSync": false,
+  // "dineug.vuerd-vscode.theme": {
+  //   "canvas": "#d7d7d7",
+  //   "table": "#e6e6e6",
+  //   "tableActive": "#ebb692",
+  //   "focus": "#ff5600",
+  //   "keyPK": "#B4B400",
+  //   "keyFK": "#dda8b1",
+  //   "keyPFK": "#60b9c4",
+  //   "font": "#5d5d5d",
+  //   "fontActive": "black",
+  //   "fontPlaceholder": "#929292",
+  //   "contextmenu": "#e6e6e6",
+  //   "contextmenuActive": "#c7c2be",
+  //   "edit": "#003ef8",
+  //   "columnSelect": "#dcd5d0",
+  //   "columnActive": "#c8d6f7",
+  //   "minimapShadow": "#5d5d5d",
+  //   "scrollBarThumb": "#929292",
+  //   "scrollBarThumbActive": "#5d5d5d",
+  //   "menubar": "white",
+  //   "visualization": "#d7d7d7"
+  // },
+  "dineug.vuerd-vscode.theme": {
+    "keyPK": "#B4B400",
+    "keyFK": "#dda8b1",
+    "keyPFK": "#60b9c4",
+    "edit": "#ffc107"
+  },
+  // "[sql]": {
+  //   "editor.defaultFormatter": "nmrmsys.vscode-sql-formatter-mod"
+  // },
+  // "sql-formatter.uppercase": true,
+  // "sql-formatter.linesBetweenQueries": 2,
+  // "sql-formatter.dialect": "sql",
 }

@@ -1,6 +1,8 @@
 import InstanceError from '../classes/instance-error';
 import ccax from '../index';
 
+// NOTE: Take more examples from https://www.tektutorialshub.com/typescript/typescript-instanceof-type-guard/
+
 /**
  * Create Mock Classes to Test the assertInstanceOf
  */
@@ -10,11 +12,6 @@ class Person {
 class Employee extends Person {}
 class User extends Person {}
 class Manager extends Employee {}
-
-// let person = new Person();
-// let employee = new Employee();
-// let user = new User();
-// let manager = new Manager();
 
 // if (person instanceof Person) console.log("person == Person")        //True
 // if (person instanceof Employee) console.log("person == Employee")
@@ -48,6 +45,14 @@ class Manager extends Employee {}
 
 describe('Check Instance Of Class And Optional Instance Of Class Assertion Type', () => {
   /**
+   * Create the different objects to test instanceof
+   */
+  // let person = new Person();
+  // let employee = new Employee();
+  // let user = new User();
+  // let manager = new Manager();
+
+  /**
    * Instance Assertion Tests With InstanceError Type
    */
   test('Instance (InstanceError): undefined is not an instance of Object Assertion', () => {
@@ -63,5 +68,14 @@ describe('Check Instance Of Class And Optional Instance Of Class Assertion Type'
     expect(() => {
       ccax.assertInstanceOf(undefined, 'source', Object, 'target');
     }).toThrow('Param source must be instance of target');
+  });
+
+  /**
+   * Instance Assertion Tests With Thrown Message
+   */
+  test('Instance (Message): null is not an instance of Object Assertion', () => {
+    expect(() => {
+      ccax.assertInstanceOf(null, 'null', Object, 'Object');
+    }).toThrow('Param null must be instance of Object');
   });
 });

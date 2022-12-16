@@ -5,7 +5,6 @@
   "testMatch": [
     "**/src/__tests__/*"
   ],
-  // "testRegex": "(src/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
   "moduleFileExtensions": [
     "ts",
     "tsx",

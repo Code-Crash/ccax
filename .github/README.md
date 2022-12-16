@@ -7,8 +7,7 @@ The motivation behind this is to avoid if-else chains just to validate the param
 
 ## How to Use
 
-TODO: Update this [In Progress]
-
+[Read Here](https://github.com/Code-Crash/ccax/blob/main/README.md#how-to-use)
 
 ## How to Contribute
 
