@@ -5,6 +5,12 @@
 This project is to utilize when we want to assert some params, it can be string, number or any instance of any class.
 The motivation behind this is to avoid if-else chains just to validate the parameters. see https://stackoverflow.com/q/73795540/2961427 for more details.
 
+[![GitHub license](https://img.shields.io/npm/l/ccax?color=blue)](https://github.com/Code-Crash/ccax/blob/main/LICENSE)
+[![npm version](https://img.shields.io/npm/v/ccax)](https://www.npmjs.com/package/ccax)
+[![PRs Welcome](https://img.shields.io/badge/contribution-Welcome-brightgreen)](https://github.com/Code-Crash/ccax#how-to-contribute)
+![Download](https://img.shields.io/npm/dw/ccax)
+
+
 ## How to Use
 
 [Read Here](https://github.com/Code-Crash/ccax/blob/main/README.md#how-to-use)
