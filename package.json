@@ -28,18 +28,18 @@
     "lib/**/*"
   ],
   "keywords": [
-    "ccax",
-    "code",
-    "crash",
     "assert-validator",
-    "cax",
-    "csx",
     "assert",
+    "validate",
+    "validator",
+    "assertion",
     "asserter",
-    "is",
     "isString",
     "isNumber",
-    "param validator"
+    "param-validator",
+    "ccax",
+    "code",
+    "crash"
   ],
   "author": "code-crash",
   "license": "MIT",

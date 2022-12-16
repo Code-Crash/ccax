@@ -1,6 +1,9 @@
 import InstanceError from '../classes/instance-error';
 import ccax from '../index';
 
+/**
+ * Create Mock Classes to Test the assertInstanceOf
+ */
 class Person {
   name: string = '';
 }
@@ -11,7 +14,7 @@ class Manager extends Employee {}
 // let person = new Person();
 // let employee = new Employee();
 // let user = new User();
-// let manager = new Manager()
+// let manager = new Manager();
 
 // if (person instanceof Person) console.log("person == Person")        //True
 // if (person instanceof Employee) console.log("person == Employee")
