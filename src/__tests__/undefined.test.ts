@@ -1,4 +1,3 @@
-import ParamError from '../classes/param-error';
 import ccax from '../index';
 
 describe('Check Undefined And Optional Undefined Assertion Type', () => {

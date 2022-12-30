@@ -4,6 +4,8 @@
     "target": "ESNext",
     "declaration": true,
     "outDir": "./lib",
+    "noUnusedLocals": true,
+    "noUnusedParameters": true
   },
   "include": [
     "src/**/*"

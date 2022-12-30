@@ -1,4 +1,3 @@
-import ParamError from '../classes/param-error';
 import ccax from '../index';
 
 describe('Check NonEmptyString And Optional NonEmptyString Assertion Type', () => {

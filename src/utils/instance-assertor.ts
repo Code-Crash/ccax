@@ -2,9 +2,8 @@ import InstanceError from '../classes/instance-error';
 import Assertor from './assertor';
 import { PARAM_ERROR } from './constants';
 import InstanceValidator from './instance-validator';
-import OptionalAssertor from './optional-assertor';
 
-export default class InstanceAssertor extends OptionalAssertor {
+export default class InstanceAssertor {
   /**
    * This method assert instance by returning true or InstanceError exception
    * @param {any} value

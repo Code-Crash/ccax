@@ -6,12 +6,12 @@ import ccax from '../index';
 /**
  * Create Mock Classes to Test the assertInstanceOf
  */
-class Person {
-  name: string = '';
-}
-class Employee extends Person {}
-class User extends Person {}
-class Manager extends Employee {}
+// class Person {
+//   name: string = '';
+// }
+// class Employee extends Person {}
+// class User extends Person {}
+// class Manager extends Employee {}
 
 // if (person instanceof Person) console.log("person == Person")        //True
 // if (person instanceof Employee) console.log("person == Employee")
