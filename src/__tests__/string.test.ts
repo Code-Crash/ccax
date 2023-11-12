@@ -22,13 +22,13 @@ describe('Check String And Optional String Assertion Type', () => {
   test('String: Null Assertion, Should Throw ParamError Exception!', () => {
     expect(() => {
       ccax.assertString(null, 'name');
-    }).toThrow('Param name must be a String');
+    }).toThrow(`Param 'name' must be a String`);
   });
 
   test('String: Object Assertion, Should Throw ParamError Exception!', () => {
     expect(() => {
       ccax.assertString({}, 'name');
-    }).toThrow('Param name must be a String');
+    }).toThrow(`Param 'name' must be a String`);
   });
 
   /**
@@ -57,6 +57,6 @@ describe('Check String And Optional String Assertion Type', () => {
   test('OptionalString: Object Assertion for Optional String, Should Throw ParamError Exception!', () => {
     expect(() => {
       ccax.assertOptionalString({}, 'name');
-    }).toThrow('Param name must be either undefined or String');
+    }).toThrow(`Param 'name' must be either undefined or String`);
   });
 });

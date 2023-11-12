@@ -59,6 +59,6 @@ describe('Check Instance Of Class And Optional Instance Of Class Assertion Type'
   test('Instance (Message): undefined is not an instance of Object Assertion', () => {
     expect(() => {
       ccax.assertInstanceOf(undefined, 'source', Object, 'target');
-    }).toThrow('Param source must be instance of target');
+    }).toThrow(`Param 'source' must be instance of 'target'`);
   });
 });
