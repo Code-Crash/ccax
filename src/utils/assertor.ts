@@ -49,6 +49,20 @@ export default class Assertor extends InstanceAssertor {
   };
 
   /**
+   * This method assert Number by returning true or ParamError exception
+   * @param {any} value
+   * @param {string} name
+   * @returns {boolean}
+   * @throws {ParamError}
+   */
+  static assertNumberAsString = (value: any, name: string): boolean => {
+    if (!Validator.isNumberAsString(value)) {
+      throw new ParamError(PARAM_ERROR.invalid.format(name, 'Number'));
+    }
+    return true;
+  };
+
+  /**
    * This method assert BigInt numbers by returning true or ParamError exception
    * @param {any} value
    * @param {string} name

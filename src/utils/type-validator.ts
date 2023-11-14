@@ -31,6 +31,15 @@ export default class Validator {
   };
 
   /**
+   * This method return if given value is number or not using isNaN.
+   * @param {any} value
+   * @returns {boolean}
+   */
+  static isNumberAsString = (value): boolean => {
+    return !isNaN(value);
+  };
+
+  /**
    * This method return if given value is bigint or not.
    * @param {any} value
    * @returns {boolean}

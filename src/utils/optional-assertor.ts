@@ -47,6 +47,20 @@ export default class OptionalAssertor {
   };
 
   /**
+   * This method assert optional Number by returning true or ParamError exception
+   * @param {any} value
+   * @param {string} name
+   * @returns {boolean}
+   * @throws {ParamError}
+   */
+  static assertOptionalNumberAsString = (value: any, name: string): boolean => {
+    if (!OptionalValidator.isOptionalNumberAsString(value)) {
+      throw new ParamError(PARAM_ERROR.optionalInvalid.format(name, 'Number'));
+    }
+    return true;
+  };
+
+  /**
    * This method assert optional BigInt numbers by returning true or ParamError exception
    * @param {any} value
    * @param {string} name

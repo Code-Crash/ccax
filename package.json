@@ -1,6 +1,6 @@
 {
   "name": "ccax",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "This library will help to assert the parameters, instances, classes, functions, primitive/non-primitive types",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",

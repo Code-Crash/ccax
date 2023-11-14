@@ -33,6 +33,15 @@ export default class OptionalValidator {
   };
 
   /**
+   * This method return if given value is number as string or undefined.
+   * @param {any} value
+   * @returns {boolean}
+   */
+  static isOptionalNumberAsString = (value): boolean => {
+    return isUndefined(value) || Validator.isNumberAsString(value);
+  };
+
+  /**
    * This method return if given value is bigint or undefined.
    * @param {any} value
    * @returns {boolean}
